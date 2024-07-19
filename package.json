@@ -1,0 +1,45 @@
+{
+	"name": "react-tailwind-ts-electron-template",
+	"private": true,
+	"version": "0.0.0",
+	"main": "main.js",
+	"build": {
+		"files": [
+			"dist/**/*",
+			"main.js",
+			"preload.js"
+		],
+		"directories": {
+			"buildResources": "build"
+		}
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+		"preview": "vite preview",
+		"start": "electron .",
+		"dist": "electron-builder"
+	},
+	"dependencies": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@types/react": "^18.2.43",
+		"@types/react-dom": "^18.2.17",
+		"@typescript-eslint/eslint-plugin": "^6.14.0",
+		"@typescript-eslint/parser": "^6.14.0",
+		"@vitejs/plugin-react": "^4.2.1",
+		"autoprefixer": "^10.4.19",
+		"electron": "^31.2.1",
+		"electron-builder": "^24.13.3",
+		"eslint": "^8.55.0",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-react-refresh": "^0.4.5",
+		"postcss-cli": "^11.0.0",
+		"tailwindcss": "^3.4.6",
+		"typescript": "^5.2.2",
+		"vite": "^5.0.8"
+	}
+}
